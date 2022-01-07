@@ -1,11 +1,10 @@
-const decrementBtn = document.querySelector('button[data-action="decrement"]');
-const incrementBtn = document.querySelector('button[data-action="increment"]');
+const decrementBtnRef = document.querySelector('button[data-action="decrement"]');
+const incrementBtnRef = document.querySelector('button[data-action="increment"]');
 const value = document.querySelector('#value');
 let currentValue = 0;
 
-decrementBtn.addEventListener("click", decrement); 
-
-incrementBtn.addEventListener("click", increment); 
+decrementBtnRef.addEventListener("click", decrement); 
+incrementBtnRef.addEventListener("click", increment); 
 
 function decrement() {
     currentValue -= 1;

@@ -1,9 +1,8 @@
-const inputText = document.querySelector('input#name-input');
-const outputText = document.querySelector('span#name-output');
+const inputTextRef = document.querySelector('#name-input');
+const outputTextRef = document.querySelector('#name-output');
 const defaultText = "Anonymous"
 
-inputText.addEventListener("input", (event) => {
+inputTextRef.addEventListener("input", (event) => {
     const currentText = event.currentTarget.value;
-    outputText.textContent = currentText;
-    outputText.textContent = currentText.trim() || defaultText;
+    outputTextRef.textContent = currentText.trim() || defaultText;
 });
